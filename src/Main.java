@@ -5,11 +5,8 @@ public class Main {
     {
         Book b = new Book("Fin" ,  "Java Programming", "9782329392");
 
-        System.out.println(b.GetTitle());
-
-        System.out.println(b.isOnLoan());
-        System.out.println(b));
-
+        UserInterface ui = new UserInterface();
+        ui.mainMenu();
 
 
 
