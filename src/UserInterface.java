@@ -35,7 +35,7 @@ public class UserInterface
                 case "1":
                   this.addbook();
                 case "2":
-                   this.ListAllBooks();
+                   this.listAllBooks();
                     break;
                 case "0":
                     quit = true;
@@ -60,14 +60,16 @@ public class UserInterface
         System.out.println("Please enter your ISBN");
         String isbn = this.inputReader.getInput();
 
-        Book b = new(author, title, isbn);
+        Book b = new Book(author, title, isbn);
         this.library.addbook(b);
 
-        public void listAllBooks()
-        {
-            this.library.listBooks();
 
-        }
+    }
+
+    public void listAllBooks()
+    {
+        this.library.listBooks();
+
     }
 
 
